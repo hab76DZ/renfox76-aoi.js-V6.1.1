@@ -1,7 +1,7 @@
 module.exports = ({
     name: "slash",
     code: `J'ai activer les commandes slash avec succès !
-    $onlyForIDs[986621867194474587;728849422531952660;570606912274694191;Erreur vous n'êtes pas dévellopeurs du bot !]
+    $onlyForIDs[VOTRE ID;ID DE VOTRE DEV;ID DE VOTRE DEV;Erreur vous n'êtes pas dévellopeurs du bot !]
 $createApplicationCommand[global;ping;🏓Mon Ping;true]
 $createApplicationCommand[global;aki;🤖 Jouer à akinator (en Anglais);true]
 $createApplicationCommand[global;wanted;⚠️ Vous êtes recherché !;true]
