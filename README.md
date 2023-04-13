@@ -6,11 +6,14 @@ Arrêt depuis la version du bot 2.7 .
 Maintenant open-source, pour votre bot !
 
 Pour initialiser le bot
-> ```npm init -y```
+```npm init -y```
 Installer les packages requise
-> ```npm i```
+```npm i```
 Pour démmarré le bot 
-> ```node index.js```
+```node index.js```
+Les commandes sont en **/**, pour les activer, vous devez faire cette commande
+```<prefix>slash```
+
 
 Bot créer par Habibi 76#5417
 Pour tout problème veuillez rejoindre le serveur:
