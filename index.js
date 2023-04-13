@@ -1,7 +1,7 @@
 const aoijs = require("aoi.js");
 const bot = new aoijs.AoiClient({
-    token: "MTA2MzkyMDU1NzI4MTc3OTc5Mw.GzBNLZ.KV9o_mmbJWYa-Xr1DTGnMPME6vc10edx2vsRms",
-  prefix: "!",
+    token: "VOTRE TOKEN",
+  prefix: "PREFIX",
   intents: ["Guilds", "GuildMembers", "GuildModeration", "GuildBans", "GuildEmojisAndStickers", "GuildIntegrations", "GuildWebhooks", "GuildInvites", "GuildVoiceStates", "GuildPresences", "GuildMessages", "GuildMessageReactions", "GuildMessageTyping", "DirectMessages", "DirectMessageReactions", "DirectMessageTyping", "MessageContent", "GuildScheduledEvents", "AutoModerationConfiguration", "AutoModerationExecution"],
         events: ["onMessage", "onMessageDelete", "onMessageUpdate", "onMessageDeleteBulk", "onGuildJoin", "onGuildLeave", "onGuildUpdate", "onGuildUnavailable", "onRoleCreate", "onRoleUpdate", "onRoleDelete", "onChannelCreate", "onChannelUpdate", "onChannelDelete", "onChannelPinsUpdate", "onStageInstanceCreate", "onStageInstanceUpdate", "onStageInstanceDelete", "onThreadCreate", "onThreadUpdate", "onThreadDelete", "onThreadListSync", "onThreadMemberUpdate", "onThreadMembersUpdate", "onJoin", "onLeave", "onMemberUpdate", "onMemberAvailable", "onMembersChunk", "onEmojiCreate", "onEmojiDelete", "onEmojiUpdate", "onStickerCreate", "onStickerDelete", "onStickerUpdate", "onBanAdd", "onBanRemove", "onReactionAdd", "onReactionRemove", "onReactionRemoveAll", "onReactionRemoveEmoji", "onVoiceStateUpdate", "onPresenceUpdate", "onTypingStart", "onInteractionCreate", "onApplicationCmdPermsUpdate", "onUserUpdate", "onVariableCreate", "onVariableDelete", "onVariableUpdate", "onFunctionError", "onWebhookUpdate"],
          // vous n'aurez pas forcément besoin de tous les intents et de tous les évents mais mettez les, ça évite les crashs
@@ -38,8 +38,7 @@ bot.command({
 $description[Salut 👋 $username 
 Mon prefix sur le serveur est **/**
 > Mon ping $ping MS
-> [Mon support](https://top.gg/servers/1066731512478843011)
-> [Top.gg](https://top.gg/bot/1063920557281779793)]`,
+`,
   nonPrefixed: true
 })
 bot.joinCommand({
@@ -53,7 +52,7 @@ bot.leaveCommand({
 $replaceText[$replaceText[$getGuildVar[leavemsg];{author.tag};$userTag];{memberscount.guild};$membersCount]`
 })
 bot.guildJoinCommand({
-channel: "1080916463789019197",
+channel: "ID DU SALON",
 code: `
 $title[Serveur Ajouté]
 $description[Le Fondateur du serveur $guildName m'as ajouté !
@@ -66,7 +65,7 @@ $footer[RenFox 76]
 `
 })
 bot.guildLeaveCommand({
-channel: "1080916463789019197",
+channel: "ID DU SALON",
 code: `
 $title[Serveur Retiré]
 $description[Le Fondateur du serveur $guildName m'as retiré !
@@ -78,7 +77,7 @@ $footer[RenFox 76]
 `
 })
 bot.readyCommand({
-    channel: "1080917491833897040",
+    channel: "ID DU SALON",
     code: `$title[Bot Actif]
 $description[Je suis en ligne avec succès ! 
 Ping > $ping MS]
@@ -89,23 +88,12 @@ $log[Bot en ligne: $userTag[$clientID]]`
 })
 
 bot.status({
-    text: "💫 Mise à jour V2.7",
+    text: "STATUS",
     type: "PLAYING",
     status: "idle",
     time: 15
 });
-bot.status({
-    text: "❓/help",
-    type: "WATCHING",
-    status: "idle",
-    time: 20
-});
-bot.status({
-    text: "🌐 $guildCount serveurs",
-    type: "PLAYING",
-    status: "idle",
-    time: 30
-});
+
 bot.command({
                   name: '$alwaysExecute',
                   code: `  
